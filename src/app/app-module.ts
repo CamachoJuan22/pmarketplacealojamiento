@@ -9,6 +9,7 @@ import { AlojamientoLista } from './pages/alojamiento-lista/alojamiento-lista';
 import { AlojamientoDetalle } from './pages/alojamiento-detalle/alojamiento-detalle';
 import { MisReservas } from './pages/mis-reservas/mis-reservas';
 import { NoEncontrado } from './pages/no-encontrado/no-encontrado';
+import { AlojamientoCard } from './components/alojamiento-card/alojamiento-card';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NoEncontrado } from './pages/no-encontrado/no-encontrado';
     AlojamientoDetalle,
     MisReservas,
     NoEncontrado,
+    AlojamientoCard,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners(), provideHttpClient()],
