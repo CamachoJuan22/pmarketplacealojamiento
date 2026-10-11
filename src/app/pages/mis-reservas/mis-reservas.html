@@ -1,1 +1,61 @@
-<p>mis-reservas works!</p>
+<h2 class="mb-4">Mis reservas</h2>
+
+@if (reservas.length === 0) {
+  <div class="alert alert-info">
+    Aún no has hecho ninguna reserva.
+    <a routerLink="/alojamientos" class="alert-link">Explora los alojamientos</a>
+    y reserva tu próxima estancia.
+  </div>
+} @else {
+
+
+  <div class="d-none d-md-block table-responsive">
+    <table class="table table-striped align-middle">
+      <thead>
+      <tr>
+        <th>Alojamiento</th>
+        <th>Ciudad</th>
+        <th>Llegada</th>
+        <th>Salida</th>
+        <th>Huéspedes</th>
+        <th>Total</th>
+        <th>Estado</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (r of reservas; track r.id) {
+          <tr>
+            <td>{{ r.alojamientoNombre }}<br><small class="text-muted">{{ r.id }}</small></td>
+            <td>{{ r.ciudad }}</td>
+            <td>{{ formatearFecha(r.fechaLlegada) }}</td>
+            <td>{{ formatearFecha(r.fechaSalida) }}</td>
+            <td>{{ r.huespedes }}</td>
+            <td>{{ r.total | currency: 'COP' : '$' : '1.0-0' }}</td>
+            <td><span class="badge" [class]="'badge ' + claseEstado(r.estado)">{{ r.estado }}</span></td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="d-md-none">
+    @for (r of reservas; track r.id) {
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <h5 class="card-title mb-0">{{ r.alojamientoNombre }}</h5>
+            <span [class]="'badge ' + claseEstado(r.estado)">{{ r.estado }}</span>
+          </div>
+          <p class="text-muted mb-2">{{ r.ciudad }}</p>
+          <p class="mb-1">Llegada: {{ formatearFecha(r.fechaLlegada) }}</p>
+          <p class="mb-1">Salida: {{ formatearFecha(r.fechaSalida) }}</p>
+          <p class="mb-1">Huéspedes: {{ r.huespedes }}</p>
+          <p class="fw-bold mb-1">Total: {{ r.total | currency: 'COP' : '$' : '1.0-0' }}</p>
+          <small class="text-muted">{{ r.id }}</small>
+        </div>
+      </div>
+    }
+  </div>
+
+}
