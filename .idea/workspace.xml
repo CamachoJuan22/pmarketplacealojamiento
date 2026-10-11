@@ -7,25 +7,19 @@
     <list default="true" id="dec1f984-b53a-47bb-96e8-48a090cfcd3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_common.js" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_common_http.js" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_common_http.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_core.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_platform-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_platform-browser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_router.js" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/@angular_router.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/_xhr-chunk-EeiiA_L8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/_xhr-chunk-EeiiA_L8.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/common-vMp9plNg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/common-vMp9plNg.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/core-C4Mibiy-.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/core-C4Mibiy-.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/http-Bx2DF1t_.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/http-Bx2DF1t_.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/platform-browser-DHUSJ5EH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/platform-browser-DHUSJ5EH.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/common-BR-4sxYT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/common-BR-4sxYT.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/http-CR9AmkLh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/http-CR9AmkLh.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/platform-browser-DDNzEgYu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/22.2.2/pmarketplacealojamiento/vite/deps/platform-browser-DDNzEgYu.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app-module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/inicio/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/inicio/inicio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/inicio/inicio.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/inicio/inicio.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/alojamiento-lista/alojamiento-lista.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/alojamiento-lista/alojamiento-lista.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/alojamiento-lista/alojamiento-lista.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/alojamiento-lista/alojamiento-lista.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1791742816334</updated>
       <workItem from="1791742817354" duration="1147000" />
-      <workItem from="1791743997667" duration="7197000" />
+      <workItem from="1791743997667" duration="7575000" />
     </task>
     <servers />
   </component>

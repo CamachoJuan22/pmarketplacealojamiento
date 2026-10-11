@@ -1,1 +1,69 @@
-<p>alojamiento-lista works!</p>
+<h2 class="mb-4">Alojamientos</h2>
+
+<div class="card card-body mb-4">
+  <div class="row g-3 align-items-end">
+    <div class="col-12 col-md-6 col-lg-3">
+      <label class="form-label" for="ciudad">Ciudad</label>
+      <select id="ciudad" class="form-select" [(ngModel)]="ciudad">
+        <option value="">Todas</option>
+        @for (c of ciudades; track c) {
+          <option [value]="c">{{ c }}</option>
+        }
+      </select>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3">
+      <label class="form-label" for="tipo">Tipo de alojamiento</label>
+      <select id="tipo" class="form-select" [(ngModel)]="tipo">
+        <option value="">Todos</option>
+        @for (t of tipos; track t) {
+          <option [value]="t">{{ t }}</option>
+        }
+      </select>
+    </div>
+
+    <div class="col-6 col-lg-2">
+      <label class="form-label" for="huespedes">Huéspedes</label>
+      <input id="huespedes" type="number" min="1" class="form-control"
+             placeholder="Ej: 2" [(ngModel)]="huespedes">
+    </div>
+
+    <div class="col-6 col-lg-2">
+      <label class="form-label" for="precio">Precio máximo</label>
+      <input id="precio" type="number" min="0" class="form-control"
+             placeholder="Ej: 300000" [(ngModel)]="precioMaximo">
+    </div>
+
+    <div class="col-12 col-lg-2">
+      <button type="button" class="btn btn-outline-secondary w-100" (click)="limpiarFiltros()">
+        Limpiar filtros
+      </button>
+    </div>
+  </div>
+</div>
+
+@if (cargando) {
+  <div class="text-center py-5">
+    <div class="spinner-border" role="status"></div>
+    <p class="mt-2 text-muted">Cargando alojamientos...</p>
+  </div>
+} @else if (hayError) {
+  <div class="alert alert-danger">
+    No se pudieron cargar los alojamientos. Intenta recargar la página.
+  </div>
+} @else if (alojamientosFiltrados.length === 0) {
+  <div class="alert alert-info">
+    No se encontraron alojamientos con esos filtros. Prueba cambiándolos o pulsa "Limpiar filtros".
+  </div>
+} @else {
+  <p class="text-muted">
+    {{ alojamientosFiltrados.length }} alojamiento(s) encontrado(s)
+  </p>
+  <div class="row g-4">
+    @for (a of alojamientosFiltrados; track a.id) {
+      <div class="col-12 col-md-6 col-lg-4">
+        <app-alojamiento-card [alojamiento]="a"></app-alojamiento-card>
+      </div>
+    }
+  </div>
+}
