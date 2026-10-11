@@ -1,0 +1,29 @@
+<section class="hero text-center rounded p-5 mb-5">
+  <h1 class="display-5 fw-bold">Alojamientos LR</h1>
+  <p class="lead mx-auto hero-descripcion">
+    Encuentra casas, apartamentos y cabañas en las mejores ciudades de Colombia.
+    Compara precios, consulta los detalles y cotiza tu estancia en pocos pasos.
+  </p>
+  <a routerLink="/alojamientos" class="btn btn-primary btn-lg">Buscar alojamientos</a>
+</section>
+
+<h2 class="mb-4">Alojamientos destacados</h2>
+
+@if (cargando) {
+  <div class="text-center py-5">
+    <div class="spinner-border" role="status"></div>
+    <p class="mt-2 text-muted">Cargando alojamientos...</p>
+  </div>
+} @else if (hayError) {
+  <div class="alert alert-danger">
+    No se pudieron cargar los alojamientos. Intenta recargar la página.
+  </div>
+} @else {
+  <div class="row g-4">
+    @for (a of destacados; track a.id) {
+      <div class="col-12 col-md-6 col-lg-4">
+        <app-alojamiento-card [alojamiento]="a"></app-alojamiento-card>
+      </div>
+    }
+  </div>
+}
