@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dec1f984-b53a-47bb-96e8-48a090cfcd3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/data/marketplace-data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/alojamiento.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/cotizacion.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/marketplace-data.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/resena.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/reserva.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +45,13 @@
     "npm.Angular CLI Server.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "E:\\Desarrollo 3\\ModuloDos\\Github CLONE\\pmarketplacealojamiento\\node_modules\\prettier",
     "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "E:\\Desarrollo 3\\ModuloDos\\Github CLONE\\pmarketplacealojamiento\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Desarrollo 3\ModuloDos\Github CLONE\pmarketplacealojamiento\public\assets\images" />
       <recent name="E:\Desarrollo 3\ModuloDos\Github CLONE\pmarketplacealojamiento\docs\prototipos" />
     </key>
   </component>
@@ -78,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1791742816334</updated>
       <workItem from="1791742817354" duration="1147000" />
-      <workItem from="1791743997667" duration="2961000" />
+      <workItem from="1791743997667" duration="3841000" />
     </task>
     <servers />
   </component>
