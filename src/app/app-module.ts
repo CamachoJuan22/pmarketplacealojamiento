@@ -12,6 +12,7 @@ import { NoEncontrado } from './pages/no-encontrado/no-encontrado';
 import { AlojamientoCard } from './components/alojamiento-card/alojamiento-card';
 import { FormsModule } from '@angular/forms';
 import { Cotizador } from './components/cotizador/cotizador';
+import { ReservaForm } from './components/reserva-form/reserva-form';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { Cotizador } from './components/cotizador/cotizador';
     NoEncontrado,
     AlojamientoCard,
     Cotizador,
+    ReservaForm,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners(), provideHttpClient()],

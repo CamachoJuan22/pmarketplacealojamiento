@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Alojamiento } from '../../models/alojamiento.model';
 import { Cotizacion } from '../../models/cotizacion.model';
 import { CotizacionService } from '../../services/cotizacion.service';
-
+import { Reserva } from '../../models/reserva.model';
 
 @Component({
   selector: 'app-cotizador',
@@ -10,7 +10,8 @@ import { CotizacionService } from '../../services/cotizacion.service';
   styleUrl: './cotizador.css',
   templateUrl: './cotizador.html',
 })
-export class Cotizador {@Input() alojamiento!: Alojamiento;
+export class Cotizador {
+  @Input() alojamiento!: Alojamiento;
 
   llegada = '';
   salida = '';
@@ -19,7 +20,7 @@ export class Cotizador {@Input() alojamiento!: Alojamiento;
   errores: string[] = [];
   cotizacion: Cotizacion | null = null;
   reservando = false;
-
+  reservaConfirmada: Reserva | null = null;
 
   hoy: string;
 
@@ -28,6 +29,7 @@ export class Cotizador {@Input() alojamiento!: Alojamiento;
   }
 
   cotizar() {
+    this.reservaConfirmada = null;
     this.errores = this.cotizacionService.validar(
       this.alojamiento, this.llegada, this.salida, this.huespedes
     );
@@ -48,8 +50,16 @@ export class Cotizador {@Input() alojamiento!: Alojamiento;
     this.cotizacion = null;
     this.errores = [];
     this.reservando = false;
+    this.cotizacion = null;
   }
 
   reservar() {
     this.reservando = true;
-  }}
+    }
+
+    alReservar(reserva: Reserva){
+      this.reservaConfirmada = reserva;
+      this.cotizacion = null;
+      this.reservando = false;
+    }
+  }

@@ -60,11 +60,24 @@
 
       <button type="button" class="btn btn-success w-100" (click)="reservar()">Reservar</button>
 
-      @if (reservando) {
-        <div class="alert alert-info mt-3 mb-0">
-          Aquí irá el formulario de reserva (Paso 17).
+      @if (!reservando) {
+        <button type="button" class="btn btn-success w-100" (click)="reservar()">Reservar</button>
+      } @else {
+        <app-reserva-form
+          [alojamiento]="alojamiento"
+          [cotizacion]="cotizacion"
+          (reservaCreada)="alReservar($event)">
+        </app-reserva-form>
+      }
         </div>
       }
+
+  @if (reservaConfirmada) {
+  <div class="alert alert-success mt-4 mb-0">
+    <h5 class="alert-heading">¡Reserva confirmada!</h5>
+    <p class="mb-1">Código de reserva: <strong>{{ reservaConfirmada.id }}</strong></p>
+    <p class="mb-2">Total: {{ reservaConfirmada.total | currency: 'COP' : '$' : '1.0-0' }}</p>
+    <a routerLink="/mis-reservas" class="alert-link">Ver mis reservas</a>
     </div>
   }
 </div>

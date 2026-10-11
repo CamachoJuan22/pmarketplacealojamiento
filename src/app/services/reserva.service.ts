@@ -13,7 +13,7 @@ export class ReservaService {
     this.cargar();
   }
 
-  
+
   obtenerReservas(): Reserva[] {
     return [...this.reservas];
   }

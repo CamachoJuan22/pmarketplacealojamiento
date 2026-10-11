@@ -7,8 +7,9 @@
     <list default="true" id="dec1f984-b53a-47bb-96e8-48a090cfcd3e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app-module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/alojamiento-detalle/alojamiento-detalle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/alojamiento-detalle/alojamiento-detalle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/cotizacion.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/cotizacion.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/cotizador/cotizador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/cotizador/cotizador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/cotizador/cotizador.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/cotizador/cotizador.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/reserva.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/reserva.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1791742816334</updated>
       <workItem from="1791742817354" duration="1147000" />
-      <workItem from="1791743997667" duration="8734000" />
+      <workItem from="1791743997667" duration="10107000" />
     </task>
     <servers />
   </component>
