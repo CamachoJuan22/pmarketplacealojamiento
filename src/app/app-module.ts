@@ -10,7 +10,8 @@ import { AlojamientoDetalle } from './pages/alojamiento-detalle/alojamiento-deta
 import { MisReservas } from './pages/mis-reservas/mis-reservas';
 import { NoEncontrado } from './pages/no-encontrado/no-encontrado';
 import { AlojamientoCard } from './components/alojamiento-card/alojamiento-card';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { Cotizador } from './components/cotizador/cotizador';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {FormsModule} from '@angular/forms';
     MisReservas,
     NoEncontrado,
     AlojamientoCard,
+    Cotizador,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners(), provideHttpClient()],

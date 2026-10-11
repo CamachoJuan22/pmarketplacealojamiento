@@ -6,7 +6,7 @@ import { Cotizacion } from '../models/cotizacion.model';
 @Injectable({ providedIn: 'root' })
 export class CotizacionService {
 
- 
+
   private aFecha(texto: string): Date {
     const partes = texto.split('-');
     return new Date(Number(partes[0]), Number(partes[1]) - 1, Number(partes[2]));

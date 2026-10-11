@@ -1,0 +1,70 @@
+<div class="card card-body shadow-sm">
+  <p class="fw-bold fs-4 mb-3">
+    {{ alojamiento.precioNoche | currency: 'COP' : '$' : '1.0-0' }}
+    <small class="fw-normal text-muted fs-6">/ noche</small>
+  </p>
+
+  <div class="mb-3">
+    <label class="form-label" for="llegada">Fecha de llegada</label>
+    <input id="llegada" type="date" class="form-control" [min]="hoy"
+           [(ngModel)]="llegada" (ngModelChange)="limpiarCotizacion()">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="salida">Fecha de salida</label>
+    <input id="salida" type="date" class="form-control" [min]="llegada || hoy"
+           [(ngModel)]="salida" (ngModelChange)="limpiarCotizacion()">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="huespedes">Huéspedes (máximo {{ alojamiento.capacidad }})</label>
+    <input id="huespedes" type="number" min="1" class="form-control"
+           [(ngModel)]="huespedes" (ngModelChange)="limpiarCotizacion()">
+  </div>
+
+  @if (errores.length > 0) {
+    <div class="alert alert-danger">
+      <ul class="mb-0 ps-3">
+        @for (e of errores; track e) {
+          <li>{{ e }}</li>
+        }
+      </ul>
+    </div>
+  }
+
+  <button type="button" class="btn btn-primary w-100" (click)="cotizar()">Cotizar</button>
+
+  @if (cotizacion) {
+    <div class="mt-4">
+      <h5>Resumen de la cotización</h5>
+      <table class="table table-sm mb-3">
+        <tbody>
+        <tr>
+          <td>{{ cotizacion.noches }} noche(s) x {{ cotizacion.precioNoche | currency: 'COP' : '$' : '1.0-0' }}</td>
+          <td class="text-end">{{ cotizacion.subtotal | currency: 'COP' : '$' : '1.0-0' }}</td>
+        </tr>
+        <tr>
+          <td>Tarifa de limpieza</td>
+          <td class="text-end">{{ cotizacion.tarifaLimpieza | currency: 'COP' : '$' : '1.0-0' }}</td>
+        </tr>
+        <tr>
+          <td>Tarifa de servicio (10 %)</td>
+          <td class="text-end">{{ cotizacion.tarifaServicio | currency: 'COP' : '$' : '1.0-0' }}</td>
+        </tr>
+        <tr class="fw-bold">
+          <td>Total</td>
+          <td class="text-end">{{ cotizacion.total | currency: 'COP' : '$' : '1.0-0' }}</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <button type="button" class="btn btn-success w-100" (click)="reservar()">Reservar</button>
+
+      @if (reservando) {
+        <div class="alert alert-info mt-3 mb-0">
+          Aquí irá el formulario de reserva (Paso 17).
+        </div>
+      }
+    </div>
+  }
+</div>

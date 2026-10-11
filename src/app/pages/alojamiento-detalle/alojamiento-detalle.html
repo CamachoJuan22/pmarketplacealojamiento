@@ -76,13 +76,7 @@
     </div>
 
     <div class="col-12 col-lg-4">
-      <div class="card card-body shadow-sm">
-        <p class="fw-bold fs-4 mb-2">
-          {{ alojamiento.precioNoche | currency: 'COP' : '$' : '1.0-0' }}
-          <small class="fw-normal text-muted fs-6">/ noche</small>
-        </p>
-        <p class="text-muted mb-0">Aquí irá el cotizador.</p>
-      </div>
+      <app-cotizador [alojamiento]="alojamiento"></app-cotizador>
     </div>
 
   </div>
