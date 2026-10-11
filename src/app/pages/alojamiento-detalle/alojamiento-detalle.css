@@ -1,0 +1,17 @@
+.imagen-principal {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.miniatura {
+  width: 90px;
+  height: 65px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.miniatura-activa {
+  border-color: #0d6efd;
+}

@@ -1,1 +1,89 @@
-<p>alojamiento-detalle works!</p>
+<a routerLink="/alojamientos" class="btn btn-link px-0 mb-3">← Volver a alojamientos</a>
+
+@if (cargando) {
+  <div class="text-center py-5">
+    <div class="spinner-border" role="status"></div>
+    <p class="mt-2 text-muted">Cargando alojamiento...</p>
+  </div>
+} @else if (hayError) {
+  <div class="alert alert-danger">
+    No se pudo cargar el alojamiento. Intenta recargar la página.
+  </div>
+} @else if (noEncontrado) {
+  <div class="alert alert-warning">
+    Ese alojamiento no existe o no está disponible.
+    <a routerLink="/alojamientos" class="alert-link">Ver todos los alojamientos</a>
+  </div>
+} @else if (alojamiento) {
+  <div class="row g-4">
+
+    <div class="col-12 col-lg-8">
+      <h2>{{ alojamiento.nombre }}</h2>
+      <p class="text-muted">
+        {{ alojamiento.ubicacion }} · {{ alojamiento.tipo }} · ★ {{ alojamiento.calificacion }}
+      </p>
+
+      <img [src]="imagenSeleccionada" [alt]="alojamiento.nombre" class="img-fluid rounded imagen-principal mb-2">
+
+      @if (alojamiento.imagenes.length > 1) {
+        <div class="d-flex gap-2 mb-4">
+          @for (img of alojamiento.imagenes; track img) {
+            <img [src]="img" [alt]="alojamiento.nombre" class="miniatura rounded"
+                 [class.miniatura-activa]="img === imagenSeleccionada"
+                 (click)="seleccionarImagen(img)">
+          }
+        </div>
+      }
+
+      <h4>Descripción</h4>
+      <p>{{ alojamiento.descripcion }}</p>
+
+      <h4>Características</h4>
+      <ul class="list-unstyled row mb-4">
+        <li class="col-6 col-md-4 mb-1">Ciudad: {{ alojamiento.ciudad }}</li>
+        <li class="col-6 col-md-4 mb-1">Tipo: {{ alojamiento.tipo }}</li>
+        <li class="col-6 col-md-4 mb-1">Capacidad: {{ alojamiento.capacidad }} huéspedes</li>
+        <li class="col-6 col-md-4 mb-1">Habitaciones: {{ alojamiento.habitaciones }}</li>
+        <li class="col-6 col-md-4 mb-1">Camas: {{ alojamiento.camas }}</li>
+        <li class="col-6 col-md-4 mb-1">Baños: {{ alojamiento.banos }}</li>
+      </ul>
+
+      <h4>Servicios</h4>
+      <div class="mb-4">
+        @for (servicio of alojamiento.servicios; track servicio) {
+          <span class="badge text-bg-secondary me-1 mb-1">{{ servicio }}</span>
+        }
+      </div>
+
+      <h4>Reglas básicas</h4>
+      <ul class="mb-4">
+        @for (regla of alojamiento.reglas; track regla) {
+          <li>{{ regla }}</li>
+        }
+      </ul>
+
+      <h4>Reseñas</h4>
+      @if (resenas.length === 0) {
+        <p class="text-muted">Este alojamiento aún no tiene reseñas.</p>
+      } @else {
+        @for (r of resenas; track r.id) {
+          <div class="card card-body mb-2">
+            <strong>{{ r.usuario }} <span class="text-muted fw-normal">· ★ {{ r.calificacion }}/5</span></strong>
+            <span>{{ r.comentario }}</span>
+          </div>
+        }
+      }
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <div class="card card-body shadow-sm">
+        <p class="fw-bold fs-4 mb-2">
+          {{ alojamiento.precioNoche | currency: 'COP' : '$' : '1.0-0' }}
+          <small class="fw-normal text-muted fs-6">/ noche</small>
+        </p>
+        <p class="text-muted mb-0">Aquí irá el cotizador.</p>
+      </div>
+    </div>
+
+  </div>
+}
