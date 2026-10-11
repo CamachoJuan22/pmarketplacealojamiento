@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dec1f984-b53a-47bb-96e8-48a090cfcd3e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pmarketplacealojamiento.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pmarketplacealojamiento.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/componente.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/navegacion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +17,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3KYmL4ld6rrZqKHDOwfw9rY63iP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,6 +39,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "E:/Desarrollo 3/Node Version/node",
     "nodejs_package_manager_path": "npm",
+    "npm.Angular CLI Server.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "E:\\Desarrollo 3\\ModuloDos\\Github CLONE\\pmarketplacealojamiento\\node_modules\\prettier",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -77,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1791742816334</updated>
       <workItem from="1791742817354" duration="1147000" />
+      <workItem from="1791743997667" duration="1563000" />
     </task>
     <servers />
   </component>
