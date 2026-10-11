@@ -1,45 +1,69 @@
 {
-  "hash": "828d0467",
-  "configHash": "10381d58",
+  "hash": "3868e850",
+  "configHash": "544076dc",
   "lockfileHash": "f09ae36b",
-  "browserHash": "7d6fc6d6",
+  "browserHash": "236bb0e1",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "7352de94",
+      "fileHash": "8b1c6e0c",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "6eb820cd",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "51c131a3",
+      "fileHash": "f93a2ec7",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "521abafe",
+      "fileHash": "182555af",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "538b9e5a",
+      "fileHash": "c592795b",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "557b35d0",
       "needsInterop": false
     }
   },
   "chunks": {
-    "common-THOh9NgN": {
-      "file": "common-THOh9NgN.js",
+    "_xhr-chunk-kKrAupIR": {
+      "file": "_xhr-chunk-kKrAupIR.js",
       "isDynamicEntry": false
     },
-    "core-C4Mibiy-": {
-      "file": "core-C4Mibiy-.js",
+    "common-CYURxdNl": {
+      "file": "common-CYURxdNl.js",
       "isDynamicEntry": false
     },
-    "platform-browser-DuD4VROf": {
-      "file": "platform-browser-DuD4VROf.js",
+    "core-ebZaXaJP": {
+      "file": "core-ebZaXaJP.js",
+      "isDynamicEntry": false
+    },
+    "esm5-DYNb5pjm": {
+      "file": "esm5-DYNb5pjm.js",
+      "isDynamicEntry": false
+    },
+    "http-BjPBn1_y": {
+      "file": "http-BjPBn1_y.js",
+      "isDynamicEntry": false
+    },
+    "platform-browser-DRM-VxIH": {
+      "file": "platform-browser-DRM-VxIH.js",
       "isDynamicEntry": false
     }
   }
