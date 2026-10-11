@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {ChangeDetectorRef, Component } from '@angular/core';
 import { Alojamiento } from '../../models/alojamiento.model';
 import { AlojamientoService } from '../../services/alojamiento.service';
 
@@ -8,7 +8,8 @@ import { AlojamientoService } from '../../services/alojamiento.service';
   styleUrl: './alojamiento-lista.css',
   templateUrl: './alojamiento-lista.html',
 })
-export class AlojamientoLista { alojamientos: Alojamiento[] = [];
+export class AlojamientoLista {
+  alojamientos: Alojamiento[] = [];
   ciudades: string[] = [];
   tipos: string[] = [];
 
@@ -21,17 +22,22 @@ export class AlojamientoLista { alojamientos: Alojamiento[] = [];
   huespedes: number | null = null;
   precioMaximo: number | null = null;
 
-  constructor(private alojamientoService: AlojamientoService) {
+  constructor(
+    private alojamientoService: AlojamientoService,
+    private cdr: ChangeDetectorRef
+  ) {
     this.alojamientoService.obtenerAlojamientos().subscribe({
       next: lista => {
         this.alojamientos = lista;
         this.ciudades = [...new Set(lista.map(a => a.ciudad))].sort();
         this.tipos = [...new Set(lista.map(a => a.tipo))].sort();
         this.cargando = false;
+        this.cdr.markForCheck();
       },
       error: () => {
         this.hayError = true;
         this.cargando = false;
+        this.cdr.markForCheck();
       }
     });
   }

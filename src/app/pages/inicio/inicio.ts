@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef,Component } from '@angular/core';
 import { Alojamiento } from '../../models/alojamiento.model';
 import { AlojamientoService } from '../../services/alojamiento.service';
 
@@ -13,17 +13,22 @@ export class Inicio {
   cargando = true;
   hayError = false;
 
-  constructor(private alojamientoService: AlojamientoService) {
+  constructor(
+    private alojamientoService: AlojamientoService,
+    private cdr: ChangeDetectorRef
+  ) {
     this.alojamientoService.obtenerAlojamientos().subscribe({
       next: (lista) => {
         // Copio la lista con [...lista] porque sort cambia el arreglo original
         const ordenados = [...lista].sort((a, b) => b.calificacion - a.calificacion);
         this.destacados = ordenados.slice(0, 3);
         this.cargando = false;
+        this.cdr.markForCheck();
       },
       error: () => {
         this.hayError = true;
         this.cargando = false;
+        this.cdr.markForCheck();
       },
     });
   }

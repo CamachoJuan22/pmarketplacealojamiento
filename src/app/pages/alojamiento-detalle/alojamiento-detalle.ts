@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { forkJoin } from 'rxjs';
 
@@ -12,7 +12,8 @@ import { AlojamientoService } from '../../services/alojamiento.service';
   styleUrl: './alojamiento-detalle.css',
   templateUrl: './alojamiento-detalle.html',
 })
-export class AlojamientoDetalle { alojamiento: Alojamiento | null = null;
+export class AlojamientoDetalle {
+  alojamiento: Alojamiento | null = null;
   resenas: Resena[] = [];
   imagenSeleccionada = '';
 
@@ -22,7 +23,8 @@ export class AlojamientoDetalle { alojamiento: Alojamiento | null = null;
 
   constructor(
     private route: ActivatedRoute,
-    private alojamientoService: AlojamientoService
+    private alojamientoService: AlojamientoService,
+    private cdr: ChangeDetectorRef
   ) {
 
     this.route.paramMap.subscribe(params => {
@@ -50,10 +52,12 @@ export class AlojamientoDetalle { alojamiento: Alojamiento | null = null;
           this.imagenSeleccionada = datos.alojamiento.imagenPrincipal;
         }
         this.cargando = false;
+        this.cdr.markForCheck();
       },
       error: () => {
         this.hayError = true;
         this.cargando = false;
+        this.cdr.markForCheck();
       }
     });
   }
