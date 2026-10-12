@@ -32,7 +32,7 @@ Proyecto de la asignatura Desarrollo de Sistemas de Información 3, Ingeniería 
 1. Clonar el repositorio:
 
 ```
-   git clone https://github.com/TU-USUARIO/proyectoalojamientos.git
+   git clone https://github.com/CamachoJuan22/proyectoalojamientos.git
 ```
 
 2. Entrar a la carpeta del proyecto:
