@@ -32,19 +32,19 @@ Proyecto de la asignatura Desarrollo de Sistemas de Información 3, Ingeniería 
 1. Clonar el repositorio:
 
 ```
-   git clone https://github.com/CamachoJuan22/proyectoalojamientos.git
+git clone https://github.com/CamachoJuan22/pmarketplacealojamiento.git
 ```
 
 2. Entrar a la carpeta del proyecto:
 
 ```
-   cd proyectoalojamientos
+cd pmarketplacealojamiento
 ```
 
 3. Instalar las dependencias:
 
 ```
-   npm install
+npm install
 ```
 
 ## Ejecución
