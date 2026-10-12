@@ -15,8 +15,8 @@
       "tarifaLimpieza": 45000,
       "calificacion": 4.8,
       "activo": true,
-      "imagenPrincipal": "assets/images/loft-bogota.jpg",
-      "imagenes": ["assets/images/loft-bogota.jpg", "assets/images/loft-bogota-2.jpg"],
+      "imagenPrincipal": "assets/images/chapinero.jpg",
+      "imagenes": ["assets/images/chapinero.jpg","assets/images/chapinero-1.jpg", "assets/images/chapinero-2.jpg","assets/images/chapinero-3.jpg"],
       "servicios": ["Wi-Fi", "Cocina", "Televisión", "Lavadora"],
       "reglas": ["No fumar", "No se permiten fiestas"]
     },
@@ -36,7 +36,7 @@
       "calificacion": 4.9,
       "activo": true,
       "imagenPrincipal": "assets/images/cartagena.jpg",
-      "imagenes": ["assets/images/cartagena.jpg", "assets/images/cartagena-2.jpg"],
+      "imagenes": ["assets/images/cartagena.jpg", "assets/images/cartagena-2.jpg","assets/images/cartagena-3.jpg","assets/images/cartagena-1.jpg"],
       "servicios": ["Wi-Fi", "Piscina", "Aire acondicionado", "Cocina", "Parqueadero"],
       "reglas": ["No fumar", "No mascotas"]
     },
@@ -56,7 +56,7 @@
       "calificacion": 4.7,
       "activo": true,
       "imagenPrincipal": "assets/images/guatape.jpg",
-      "imagenes": ["assets/images/guatape.jpg", "assets/images/guatape-2.jpg"],
+      "imagenes": ["assets/images/guatape.jpg", "assets/images/guatape-2.jpg", "assets/images/guatape-3.jpg", "assets/images/guatape-4.jpg"],
       "servicios": ["Wi-Fi", "Cocina", "Parqueadero", "BBQ"],
       "reglas": ["No fumar", "Silencio después de las 10 PM"]
     },
@@ -75,8 +75,8 @@
       "tarifaLimpieza": 90000,
       "calificacion": 4.6,
       "activo": true,
-      "imagenPrincipal": "assets/images/villa-leyva.jpg",
-      "imagenes": ["assets/images/villa-leyva.jpg", "assets/images/villa-leyva-2.jpg"],
+      "imagenPrincipal": "assets/images/villa-de-leyva.jpg",
+      "imagenes": ["assets/images/villa-de-leyva.jpg", "assets/images/villa-de-leyva-1.jpg", "assets/images/villa-de-leyva-2.jpg", "assets/images/villa-de-leyva-3.jpg"],
       "servicios": ["Wi-Fi", "Cocina", "Chimenea", "Parqueadero"],
       "reglas": ["No fiestas", "Máximo 8 huéspedes"]
     },
@@ -96,7 +96,7 @@
       "calificacion": 4.5,
       "activo": true,
       "imagenPrincipal": "assets/images/medellin.jpg",
-      "imagenes": ["assets/images/medellin.jpg"],
+      "imagenes": ["assets/images/medellin.jpg","assets/images/medellin-1.jpg","assets/images/medellin-2.jpg","assets/images/medellin-3.jpg","assets/images/medellin-4.jpg"],
       "servicios": ["Wi-Fi", "Cocina", "Gimnasio", "Parqueadero"],
       "reglas": ["No fumar"]
     },
